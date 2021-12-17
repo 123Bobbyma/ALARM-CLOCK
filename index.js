@@ -69,12 +69,10 @@ const myList = document.querySelector(".set-alarms-list");
 
 function shownew_Alarm(new_Alarm) {
   const html = `
-  <div id="display-alarm-list">
     <li class = "time-list">        
         <span class="time">${new_Alarm}</span>
         <button class="deleteAlarm time-control" id="delete-button" onclick = "remove(this.value)" value=${new_Alarm}>Delete Alarm</button>       
-    </li>
-    </div>`;
+    </li>`;
   myList.innerHTML += html;
 }
 
